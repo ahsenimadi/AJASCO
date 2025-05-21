@@ -1,0 +1,35 @@
+const homePageTranslations = {
+      en: {
+        heroTitle1: "AJASCO Group:",
+        heroTitle2: "Your Vision, Our Priority.",
+        heroSubtitle: "Engage with one of Saudi Arabia’s leading multidisciplinary service providers. Renowned for reliability, technical excellence, and customer service.",
+        exploreServices: "Explore Services",
+        getInTouch: "Get In Touch",
+        whyChoose: "Why Choose AJASCO Group?",
+        whyChooseSubtitle: "We are committed to delivering excellence in every project, ensuring client satisfaction through our core values and expertise.",
+        featureReliability: "Reliability",
+        featureReliabilityDesc: "Count on us for dependable and consistent service delivery across all projects.",
+        featureTechExcellence: "Technical Excellence",
+        featureTechExcellenceDesc: "Our skilled professionals leverage cutting-edge technology and best practices.",
+        featureCustomerService: "Customer Service",
+        featureCustomerServiceDesc: "We prioritize your needs, ensuring clear communication and tailored solutions.",
+        featureMultidisciplinary: "Multidisciplinary",
+        featureMultidisciplinaryDesc: "A wide range of services under one roof, simplifying your project management.",
+        partnerTitle: "Partner with Innovation and Expertise",
+        partnerDesc1: "AJASCO Group is more than just a service provider; we are your strategic partner in achieving your project goals. Our experienced engineers and project managers ensure transparent communication and superior results at every step.",
+        partnerPoint1: "Prompt and professional responses",
+        partnerPoint2: "Local presence with national reach",
+        partnerPoint3: "Experienced engineers and project managers",
+        learnMore: "Learn More About Us",
+        readyToStart: "Ready to Start Your Next Project?",
+        readyToStartDesc: "From concept to execution, AJASCO Group is your trusted partner. Reach out today and discover how we can help bring your vision to life.",
+        scheduleConsultation: "Schedule a Consultation",
+      },
+      ar: {
+        heroTitle1: "مجموعة أجاسكو:",
+        heroTitle2: "رؤيتك، أولويتنا.",
+        heroSubtitle: "تواصل مع أحد أبرز مزودي الخدمات متعددة التخصصات في المملكة العربية السعودية. مشهورون بالموثوقية والتميز التقني وخدمة العملاء.",
+        whyChoose: "لماذا تختار مجموعة أجاسكو؟",
+      }
+    };
+    export default homePageTranslations;

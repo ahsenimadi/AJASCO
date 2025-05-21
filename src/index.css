@@ -1,0 +1,84 @@
+@tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @layer base {
+      :root {
+        --background: 0 0% 100%;
+        --foreground: 224 71.4% 4.1%;
+        --card: 0 0% 100%;
+        --card-foreground: 224 71.4% 4.1%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 224 71.4% 4.1%;
+        --primary: 210 40% 98%; /* Light blue-gray for primary background */
+        --primary-foreground: 220 9% 46%; /* Darker gray for text on primary */
+        --secondary: 220 14.3% 95.9%; /* Lighter gray for secondary elements */
+        --secondary-foreground: 220.9 39.3% 11%;
+        --muted: 220 14.3% 95.9%;
+        --muted-foreground: 220 8.9% 46.1%;
+        --accent: 30 90% 50%; /* Vibrant orange for accents */
+        --accent-foreground: 0 0% 100%; /* White text on accent */
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 220 13% 91%;
+        --input: 220 13% 91%;
+        --ring: 30 90% 50%; /* Accent color for rings/focus */
+        --radius: 0.5rem;
+      }
+
+      .dark {
+        --background: 224 71.4% 4.1%;
+        --foreground: 0 0% 98%;
+        --card: 224 71.4% 4.1%;
+        --card-foreground: 0 0% 98%;
+        --popover: 224 71.4% 4.1%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 210 40% 10%; /* Dark blue-gray for primary background */
+        --primary-foreground: 0 0% 98%; /* Light text on primary */
+        --secondary: 220 14.3% 9.8%; /* Darker gray for secondary elements */
+        --secondary-foreground: 0 0% 98%;
+        --muted: 220 14.3% 9.8%;
+        --muted-foreground: 0 0% 62.8%;
+        --accent: 30 90% 50%; /* Vibrant orange for accents */
+        --accent-foreground: 0 0% 10%; /* Dark text on accent */
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 220 13% 17.9%;
+        --input: 220 13% 17.9%;
+        --ring: 30 90% 50%;
+      }
+    }
+
+    @layer base {
+      * {
+        @apply border-border;
+      }
+      body {
+        @apply bg-background text-foreground;
+        font-family: 'Inter', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        @apply font-bold;
+      }
+      h1 { @apply text-4xl lg:text-5xl; }
+      h2 { @apply text-3xl lg:text-4xl; }
+      h3 { @apply text-2xl lg:text-3xl; }
+      p { @apply leading-relaxed; }
+    }
+
+    /* Custom scrollbar for a more modern look */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: hsl(var(--secondary));
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: hsl(var(--accent));
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: hsl(var(--accent) / 0.8);
+    }
